@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/Longhaul');
+@import url('https://fonts.cdnfonts.com/css/Sanshiro');
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+	margin: 0;
+	padding: 0em;
+  color: #2d2e32;
+}
+
+.top {
+  height: 100vh;
+  background-image: linear-gradient(90deg, #283E51 0%, #203A43 51%, #0F2027 100%);
+}
+
+header {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.headernav-text {
+  font-family: Longhaul;
+  color: white;
+  font-size: 19px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-left: 70px;
+}
+
+.headernav-text:hover {
+  color: #36A9E1;
+  text-decoration: underline;
+}
+
+.em-logo {
+  width: 100px;
+}
+
+.heading-box {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.heading {
+  font-family: "Sanshiro";
+  font-style: italic;
+  color: white;
+  font-size: 90px;
+}
+
+.topIco {
+  color: white;
+  font-size: 30px;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.topIco:hover {
+  color: #36A9E1;
+}
+
+footer {
+  padding: 5px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+#contact {
+  width: 100vw;
+  padding: 50px;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.email {
+  font-family: "Longhaul", "Sanshiro", "Poppins";
+  color: white;
+  font-size: 65px;
+  cursor: url('cursor100.png') 64 64, auto;
+  text-decoration: underline;
+  text-decoration-color: #36A9E1;
+  transition: color 0.3s ease;
+}
+
+.email:hover {
+  color: #36A9E1;
+}
+
+.image-box {
+  position: absolute; 
+  right: 100px;
+}
+
+.bolt {
+  position: absolute; 
+  height: 1300px;
+  right: 0px;
+}
+
+.nav-text {
+  position: absolute;
+  font-family: Longhaul;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-text:hover {
+  color: #36A9E1;
+  text-decoration: underline;
+}
+
+.aboutLink {
+  top: 200px;
+  right: 170px;
+}
+
+.projectsLink {
+  top: 300px;
+  right: 180px;
+}
+
+.contactLink {
+  top: 400px;
+  right: 220px;
+}
+
+#projects {
+ background-color: rgb(240, 240, 240);
+ padding: 35px;
+}
+
+#about {
+  padding: 35px;
+ }
+
+p {
+  font-family: "Poppins";
+}
+
+.aboutText {
+  width: calc(100vw - 400px);
+  position: relative;
+  z-index: 100;
+  font-size: 20px;
+}
+
+.titleSection {
+  font-family: "Sanshiro";
+  font-size: 40px;
+  font-style: italic;
+}
+
+.pic-wrapper {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.pic-wrapper img { 
+  width: 100%; 
+  height: auto;
+}
+
+.foIco {
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.foIco:hover {
+  color: #36A9E1;
+}
+
+.viewProject {
+  color: white;
+  text-decoration: none;
+  background-color: #36A9E1;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: "Poppins";
+  transition: background-color 0.3s ease;
+}
+
+.viewProject:hover {
+  background-color: #1D71B8;
+}
+
+.proIco {
+  color: #36A9E1;
+  font-size: 30px;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.proIco:hover {
+  color: #1D71B8;
+}
+
+.carousel {
+  width: 550px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  cursor: none;
+  margin: 20px;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide-animation 18s infinite;
+}
+
+.slide {
+  width: 550px;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 550px;
+  display: block;
+}
+
+@keyframes slide-animation {
+  0% { transform: translateX(0); }  
+  25% { transform: translateX(0); } 
+  33% { transform: translateX(-550px); }
+  58% { transform: translateX(-550px); } 
+  66% { transform: translateX(-1100px); }
+  91% { transform: translateX(-1100px); } 
+  100% { transform: translateX(0); } 
+}
+
+.projectParent {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.projectOutline {
+  background-color: #F7F7F7;
+  padding: 15px;
+  border-radius: 15px;
+  max-width: 1120px;
+  width: 80vw;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s ease;
+}
+
+.projectOutline:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.projectTitle {
+  font-family: "Sanshiro";
+  font-size: 30px;
+  font-style: italic;
+  margin-right: 15px;
+}
+
+.descPro {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #36A9E1;
+}
+
+.titlePro {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.projLinks {
+  display: flex;
+  align-items: center;
+}
+
+.projectText {
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  
+  .image-box {
+    display: none;
+  }
+
+  .aboutText {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  
+  .headerimage-box {
+    display: none;
+  }
+}
+
+@media (max-width: 870px) {
+  
+  .email {
+    font-size: 50px;
+  }
+
+}
+
+@media (max-width: 735px) {
+  
+  .carousel {
+    width: 450px;
+  }
+  
+  .slide {
+    width: 450px;
+  }
+  
+  .slide img {
+    width: 450px;
+  }
+  
+  @keyframes slide-animation {
+    0% { transform: translateX(0); }  
+    25% { transform: translateX(0); } 
+    33% { transform: translateX(-450px); }
+    58% { transform: translateX(-450px); } 
+    66% { transform: translateX(-900px); }
+    91% { transform: translateX(-900px); } 
+    100% { transform: translateX(0); } 
+  }
+
+  .headernav-text {
+    font-size: 16px;
+  }
+
+  .em-logo {
+    width: 80px;
+  }
+
+  .heading {
+    font-size: 75px;
+  }
+
+}
+
+@media (max-width: 735px) {
+  
+  .carousel {
+    width: 450px;
+  }
+  
+  .slide {
+    width: 450px;
+  }
+  
+  .slide img {
+    width: 450px;
+  }
+  
+  @keyframes slide-animation {
+    0% { transform: translateX(0); }  
+    25% { transform: translateX(0); } 
+    33% { transform: translateX(-450px); }
+    58% { transform: translateX(-450px); } 
+    66% { transform: translateX(-900px); }
+    91% { transform: translateX(-900px); } 
+    100% { transform: translateX(0); } 
+  }
+
+  .headernav-text {
+    font-size: 16px;
+  }
+
+  .em-logo {
+    width: 80px;
+  }
+
+  .heading {
+    font-size: 75px;
+  }
+
+}
+
+@media (max-width: 705px) {
+  
+  .email {
+    font-size: 40px;
+    cursor: url('cursor64.png') 64 64, auto;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .email {
+    font-size: 30px;
+    cursor: url('cursor64.png') 64 64, auto;
+  }
+  
+  .projectParent {
+    margin-bottom: 50px;
+    background-color: green;
+  }
+
+  .projectOutline {
+    background-color: #F7F7F7;
+    border-radius: 0;
+    width: 100vw;
+    padding: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease;
+  }
+
+  #projects {
+    background-color: rgb(240, 240, 240);
+    padding: 0px;
+   }
+
+  .aboutText {
+    font-size: 16px;
+  }
+
+  .headernav-text {
+    font-size: 14px;
+  }
+
+  .em-logo {
+    width: 70px;
+  }
+
+  .headernav-text {
+    margin-left: 50px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+}
+
+.loading-screen {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(26, 26, 26);
+  z-index: 1000;
+}
+
+.loadingbolts {
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+}
+
+.up-arrow {
+  justify-content: center;
+  height: 20px;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: #36A9E1;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(80px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  display: block;
+}
+
+#scrollToTopBtn.show {
+  transform: translateY(0);
+}
+
+#scrollToTopBtn:hover {
+  background-color: #1D71B8;
+}
+
+@media (max-height: 1200px) {
+  
+  .image-box {
+    position: absolute; 
+    right: 100px;
+  }
+  
+  .bolt {
+    position: absolute; 
+    height: 1000px;
+    right: 0px;
+  }
+  
+  .nav-text {
+    position: absolute;
+    font-family: Longhaul;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-text:hover {
+    color: #36A9E1;
+    text-decoration: underline;
+  }
+  
+  .aboutLink {
+    top: 100px;
+    right: 100px;
+  }
+  
+  .projectsLink {
+    top: 200px;
+    right: 115px;
+  }
+  
+  .contactLink {
+    top: 300px;
+    right: 155px;
+  }
+
+}
